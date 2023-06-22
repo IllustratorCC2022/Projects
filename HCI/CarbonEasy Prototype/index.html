@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CarbonEasy</title>
+    <link rel="stylesheet" href="w33.css" media="screen and (min-width: 1080px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <style>
+        h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+        body {font-family: "Open Sans"}
+    </style>
+    <script>
+        function openRegistrationOverlay() {
+            document.getElementById("form-ct").style.display = "block";
+        }
+        function closeRegistrationOverlay() {
+            document.getElementById("form-ct").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+<!--<div class="body"><img src="background_test.jpg"></div>-->
+<!-- Top Navigation -->
+<div class="topnav">
+    <img src="CarbonEasyLogo2Alt.png">
+    <a href="#news"><b>News </b></a>
+    <a href="#community"><b>Community</b></a>
+    <a href="#aboutus"><b>Who are we</b></a>
+    <a href="#contact"><b>Contact Us</b></a>
+    <button class="topnav-register-button custom-colour" id="trigger-modal" onclick="openRegistrationOverlay()"><b>Register</b></button>
+    <button class="topnav-login-button custom-background-colour"><b>Login</b></button>
+</div>
+
+<!-- Main Body Content -->
+<div class="body">
+    <div class="change-image">
+        <div class="body-change-image">
+            <img src="GreatSaltLakeBefore.jpg">
+            <img src="GreatSaltLakeAfter.jpg" class="img-after">
+        </div>
+        <p class="body-change-image-title custom-colour"><b>The Great Salt Lake, Utah</b></p>
+        <p class="body-change-image-blurb"> A recent report found that the lake could essentially disappear within
+            five years. As a key stopover for migrating birds, the lake's loss could undermine whole ecosystems.
+            See what you can do to help.</p>
+    </div>
+    <div class="body-container">
+        <p class="body body-blurb-title"><b>Take Action Now</b></p>
+        <p class="body body-blurb">In New Zealand, our energy makes up 40% of our greenhouse emissions.
+            Would you like to know how much your lifestyle contributes to this? Join us and take a peek by completing our
+            short quiz to see where you can improve.</p>
+        <br>
+        <a href="#calculator"><b>Calculate Now</b></a>
+    </div>
+</div>
+
+<!-- Overlay Registration form -->
+<div id="form-ct" class="overlay">
+    <div class="popup">
+        <a class="close" href="#" onclick="closeRegistrationOverlay()">×</a>
+        <h2>Register Now</h2>
+        <div class="content">
+            <form>
+                <div id="userInfo">
+                    <h3 class="custom-colour">Your Details:</h3>
+                    <label for="fname">Given Name:<sup>*</sup></label><br>
+                    <input type="text" id="fname" name="fname" required><br>
+                    <label for="lname">Last Name:<sup>*</sup></label><br>
+                    <input type="text" id="lname" name="lname" required><br>
+                    <label for="username">Username:<sup>*</sup></label><br>
+                    <input type="text" id="username" name="username" required><br>
+                    <label for="password">Password:<sup>*</sup></label><br>
+                    <input type="text" id="password" name="username" required><br>
+                </div>
+                <div id="addressInfo">
+                    <h3 class="custom-colour">Addresses:</h3>
+                    <label for="homeaddress">Home Address:</label><br>
+                    <input type="text" id="homeaddress" name="homeaddress"><br>
+                    <label for="workaddress">Work Address:</label><br>
+                    <input type="text" id="workaddress" name="workaddress"><br>
+                </div>
+                <div id="contactInfo">
+                    <h3 class="custom-colour">Contacts:</h3>
+                    <label for="mobile">Mobile Number:</label><br>
+                    <input type="number" id="mobile" name="mobile"><br>
+                    <label for="email">Email Address:<sup>*</sup></label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                </div>
+                <input type="submit" value="Submit" class="submit">
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

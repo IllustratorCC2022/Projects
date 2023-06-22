@@ -1,0 +1,308 @@
+
+    @media only screen and (min-width:1px) and (max-width:1920px) {
+        /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+        html {box-sizing: border-box}
+        *, *:before, *:after {box-sizing: inherit}
+        /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+        html {-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%}
+
+        body {margin: 0}
+        article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+            display: block
+        }
+
+        /* MY IMPLEMENTATION */
+        .custom-colour {
+            color: #fc00ac;
+        }
+
+        .custom-background-colour {
+            background-color: #fc00ac;
+        }
+
+        /* -------------------------------------- */
+        /* Top Navigation Bar                     */
+        /* -------------------------------------- */
+        .topnav {
+            position: relative;
+            padding: 15px 20px 0 20px;
+            height: 130px;
+            overflow: hidden;
+            border-bottom: black 2px solid;
+            background-color: black;
+        }
+
+        .topnav img {
+            float: left;
+            height: 95px;
+            padding-top: revert;
+            padding-left: 20px;
+            padding-right: 50px;
+
+        }
+
+        .topnav a {
+            float: left;
+            color: white;
+            text-align: center;
+            margin: 50px 2% 0 2%;
+            text-anchor: middle;
+            text-decoration: none;
+            font-size: 110%;
+            font-family: "Yu Gothic UI Semibold", serif;
+        }
+
+        .topnav a:hover {
+            color: #fc00ac;
+        }
+
+        .topnav-register-button {
+            background-color: white;
+            padding: 5px;
+            color: #fc00ac;
+            border: none;
+            float: right;
+            font-size: 120%;
+            margin-top: 45px;
+        }
+
+        .topnav-login-button {
+            background-color: #fc00ac;
+            padding: 5px;
+            color: white;
+            border: none;
+            float: right;
+            font-size: 120%;
+            margin-top: 45px;
+            margin-right: 1%;
+        }
+
+        .topnav-login-button:hover {
+            background-color: white;
+            color: #fc00ac;
+        }
+
+        .topnav-register-button:hover {
+            background-color: #fc00ac;
+            color: white;
+        }
+
+        /* -------------------------------------- */
+        /* Main Body Style                        */
+        /* -------------------------------------- */
+        .body {
+            width: 100%;
+            margin: 0;
+            display: block;
+        }
+
+        .body img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .body-blurb-title {
+            position: relative;
+            padding: 10px;
+            color: #fc00ac;
+            font-family: Oswald, serif;
+            margin-top: 30%;
+            left: 10%;
+            font-size: 200%;
+            width: max-content;
+        }
+
+        .body-blurb {
+            position: relative;
+            background-color: white;
+            padding: 10px;
+            left: 11%;
+            width: 80%;
+            color: black;
+            font-family: Oswald, serif;
+            font-size: 120%;
+            border-top: black 2px solid;
+        }
+
+        .body-change-image {
+            float: right;
+            width: 80%;
+            background-image: url("GreatSaltLakeBefore.jpg");
+            margin-top: 5%;
+            position: absolute;
+            alignment: right;
+            margin-right: 5%;
+            margin-left: 10%;
+            vertical-align: middle;
+
+        }
+
+        .body-change-image img {
+            float: right;
+        }
+
+        .body-change-image .img-after {
+            display: none;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+
+        .body-change-image:hover .img-after {
+            display: inline;
+        }
+
+        .body-change-image-title {
+            position: relative;
+            float: right;
+            margin-right: 10%;
+            margin-top: 50%;
+            padding: 10px;
+            color: #fc00ac;
+            font-family: Oswald, serif;
+            font-size: 120%;
+            background: white;
+        }
+
+        .body-change-image-blurb {
+            position: relative;
+            float: right;
+            margin-left: 15%;
+            margin-right: 8%;
+            padding: 10px;
+            color: black;
+            font-family: Oswald, serif;
+            font-size: 90%;
+            background: white;
+            width: 70%;
+            border-top: black 2px solid;
+            line-height: 125%;
+        }
+
+        .body a {
+            margin-left: 12%;
+            background-color: #fc00ac;
+            padding: 5px;
+            color: white;
+            border: none;
+            font-family: Oswald, serif;
+            text-decoration: none;
+        }
+
+        .body a:hover {
+            margin-left: 11%;
+            background-color: black;
+            padding: 5px;
+            color: white;
+            border: none;
+            font-family: Oswald, serif;
+            text-decoration: none;
+        }
+
+        .background-image-test {
+            position: absolute;
+            width: 150%;
+        }
+
+        .change-image {
+            position: absolute;
+            margin-left: 50%;
+            width: 50%;
+            filter: drop-shadow(5px 5px 2px gray);
+            height: 100%;
+        }
+
+        .body-container {
+            position: absolute;
+            margin-right: 50%;
+            width: 50%;
+            height: 100%;
+            max-height: 100%;
+        }
+
+        /* -------------------------------------- */
+        /* Registration Overlay                   */
+        /* -------------------------------------- */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .popup {
+            background-color: #fff;
+            padding: 3vw;
+            border-radius: 5px;
+            width: 50%;
+            max-width: 80vh;
+            height: 95%;
+            margin: 2% auto;
+            overflow: auto;
+        }
+
+        .popup h2 {
+            font-size: 1.8vw;
+            margin-left: 3%;
+            line-height: 1;
+        }
+
+        .popup h3 {
+            text-decoration: underline;
+            font-size: 1.1vw;
+            line-height: 1;
+            margin-left: 5%;
+        }
+
+        .popup label {
+            font-family: Oswald, serif;
+            font-size: 1vw;
+            margin-left: 5%;
+        }
+
+        .popup input {
+            width: 85%;
+            font-size: 1vw;
+            line-height: 1.2;
+            margin-left: 5%;
+        }
+
+        .popup .submit {
+            width: auto;
+            background-color: white;
+            color: #fc00ac;
+            border: #fc00ac 1px solid;
+            padding: 0.65vw 0.65vw;
+            margin-left: 76%;
+            border-radius: 5px;
+        }
+
+        .popup .submit:hover {
+            background-color: #fc00ac;
+            color: white;
+        }
+
+        .popup .close {
+            position: relative;
+            float: right;
+            color: gray;
+            font-size: 1.2vw;
+            text-decoration: none;
+        }
+
+        .popup .close:hover {
+            color: #fc00ac;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+    }
